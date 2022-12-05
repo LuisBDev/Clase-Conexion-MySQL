@@ -6,7 +6,14 @@ public class ClaseConexionMySQL {
 
     static Connection conn;
     
-    public static void main(String[] args) {
-
+    public static void conectarBaseDeDatos()
+    {
+        Conexion miConexion = new Conexion();
+        conn = miConexion.conectar();
+    }
+    
+    public static void main(String[] args) 
+    {
+        conectarBaseDeDatos();
     }
 }
